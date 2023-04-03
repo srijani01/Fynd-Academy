@@ -1,0 +1,85 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+   
+}
+
+html{
+    overflow-x: hidden;
+}
+
+
+
+nav{
+    width: 100%;
+    height: 60px;
+    /* background-color: rgb(128, 124, 124); */
+    /* background-image: linear-gradient(grey 80%,white); */
+    background-image: url('./images/nav.jpg');
+    background-position: center;
+    color: white;
+    /* display: flex; */
+    text-align: center;
+    align-items: center;
+    padding: 15px;
+}
+
+nav ul{
+    display: flex;
+    list-style-type: none;
+    justify-content: space-between;
+}
+
+nav li a{
+    color: white;
+    text-decoration: none;
+    
+}
+
+.holiday-txt{
+    font-size: 30px;
+    letter-spacing: 5px;
+}
+
+h2{
+    font-size: 30px;
+    margin: 50px;
+}
+
+.events{
+    width: 100%;
+    height: 200px;
+    background-color: white;
+    border: solid 2px rgb(115, 40, 53);
+}
+
+.image img{
+    padding: 10px;
+    width: 300px;
+    height: 200px;
+}
+
+.description{
+    justify-content: center;
+    padding-top: 100px;
+}
+
+.book{
+    padding-top: 80px;
+    padding-left: 100px;
+}
+
+.book button{
+   
+    width: 120px;
+    height: 50px;
+    border: none;
+    border-radius: 30px;
+    background-color: rgb(115, 40, 53);
+}
+
+.book button a{
+    text-decoration: none;
+    color: white;
+}

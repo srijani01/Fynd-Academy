@@ -1,0 +1,283 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* font-family: Verdana, Geneva, Tahoma, sans-serif; */
+   
+}
+
+html{
+    overflow-x: hidden;
+}
+
+body{
+    background-image: url('./images/Ganga-Aarti-Varanasi.jpg');
+    background-repeat: no-repeat;
+    /* background-size: cover; */
+    background-position: top, bottom;
+    /* width: 1200px; */
+}
+
+nav{
+    width: 100%;
+    height: 60px;
+    /* background-color: rgb(128, 124, 124); */
+    /* background-image: linear-gradient(grey 80%,white); */
+    background-image: url('./images/nav.jpg');
+    background-position: center;
+    color: white;
+    /* display: flex; */
+    text-align: center;
+    align-items: center;
+    padding: 15px;
+}
+
+nav ul{
+    display: flex;
+    list-style-type: none;
+    justify-content: space-between;
+}
+
+nav li a{
+    color: white;
+    text-decoration: none;
+    
+}
+
+.signup{
+    border: white 2px solid;
+    padding-inline: 10px;
+    padding-top: 5px;
+    padding-bottom: 7px;
+    border-radius: 20px;
+}
+
+.holiday-txt{
+    font-size: 30px;
+    letter-spacing: 5px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.india{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.gallery{
+    padding: 60px; 
+    padding-top: 100px;
+    width: 100%;
+    height: 700px;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(2,1vw);
+    grid-gap: 5px;
+    position: relative;
+    background-color: rgba(255, 228, 196, 0.649);
+
+}   
+
+
+
+@keyframes slide-left{
+    from{transform:translate3d(0,0,0);}
+    to{transform: translate3d(-30px,-30px,0);}
+}
+
+@keyframes slide-right {
+    from{transform:translate3d(0,0,0);}
+    to{transform: translate3d(30px,30px,0);}
+}
+
+.gallery img{
+    height: 200px;
+    width: 300px;
+    
+}
+
+.img-top img{ /* diwali*/
+    margin-left: 300px;
+
+    z-index: -1;
+
+    animation-name: slide-left;
+    animation-duration: 2s;
+    animation-direction: normal;
+    animation-iteration-count: infinite;
+}
+
+.img-top:hover{
+   
+    z-index: 1;
+    cursor: pointer;
+    width: 500px;
+    height: 500px ;
+    
+    
+}
+
+.img-right img{ /* navratri*/
+    margin-top: 100px;
+    margin-left: 200px;
+    animation-name: slide-left;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+.img-bottom img{ /* onam */
+    margin-top: 250px;
+    margin-left: 200px;
+    /* z-index: -1;*/
+    animation-name: slide-right;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+} 
+
+.img-left img{ /*ganpati*/
+  margin-top: 100px;
+
+  animation-name: slide-right;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+
+.img-left:hover{
+    z-index: 1;
+    cursor: pointer;
+}
+
+.btn{
+    height:40px;
+    width: 200px;
+    margin-top: 450px;
+    margin-left: 300px;
+    background-color: rgb(115, 40, 53);
+    border: none;
+    box-shadow: 5px 10px 18px rgb(77, 25, 34);
+}
+
+.btn a{
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.banner{
+    
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100px;
+    width: 100%;
+    margin: 0;
+    text-align: center;
+}
+
+.banner-text{
+   padding: 30px;
+   font-size: 30px;
+   letter-spacing: 8px;
+   color: rgb(244, 240, 240);
+   /* background-color: rgb(115, 40, 53); */
+   background-image: linear-gradient(rgb(115, 40, 53),rgb(146, 93, 93));
+    width: 100%;
+   height: auto;
+   text-align: center;
+}
+
+
+.container{
+    /* margin-left: 100px; */
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-gap: 20px;
+    background-image: url('./images/holibanner.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    padding: 100px;
+}
+.festivals{
+    height: 300px;
+    width: 200px;
+    border: black 0px solid;
+    box-shadow: 5px 10px 18px rgb(115, 40, 53);
+    border-radius: 20px;
+    align-items: center;
+    background-color: white;
+}
+
+.text{
+    text-align: center; 
+}
+
+.image img{
+    height: 200px;
+    width: 200px ;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+}
+
+.festivals button {
+   margin-left: 50px;
+   margin-top: 30px;
+   width: 100px;
+   height: 40px;
+   border-radius: 30px;
+   background-color: rgb(115, 40, 53);
+   color: white;
+   border: none;
+}
+
+.festivals a{
+    color: white;
+    text-decoration: none;
+}
+
+.load-more{
+    align-items: center;
+}
+
+.load-more button{
+    background-color: rgb(115, 40, 53);
+    width: 120px;
+    height: 40px;
+    border-radius: 30px;
+    margin-left: 700px;
+}
+
+.load-more a{
+    text-decoration: none;
+    color: white;
+}
+
+footer{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color:  rgb(115, 40, 53);
+    position: absolute;
+    height: auto;
+    width: 100%;
+    text-align: center;
+    padding-top: 80px;
+    color: white;
+  }
+
+.footer input{
+    width: 200px;
+    height: 30px;
+}
+
+.footer button{
+    width: 70px;
+    height: 30px;
+    background-color: rgb(60, 14, 22);
+    color: white;
+    border-radius: 20px;
+    box-shadow: 5px 10px 18px rgb(40, 1, 7);
+    border: none;
+}
+
+  .footer a{
+    text-decoration: none;
+    color: white;
+  }
